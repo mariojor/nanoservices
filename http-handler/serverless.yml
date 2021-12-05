@@ -1,0 +1,25 @@
+service: http-handler
+
+plugins:
+ - serverless-apigw-binary
+ - serverless-offline
+
+custom:
+  apigwBinary:
+    types:
+      - 'image/jpeg'
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  
+functions:
+  upload:
+    handler: handler.upload
+    role: arn:aws:iam::199387744801:role/lambda-http-handler
+    events:
+     - http:
+          path: images
+          method: post

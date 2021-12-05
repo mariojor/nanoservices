@@ -1,0 +1,8 @@
+### REMOVER ###
+/.git/
+.npmignore
+/node_modules/
+/.serverless/
+package-lock.json
+
+

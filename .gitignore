@@ -1,0 +1,10 @@
+### REMOVER ###
+/.git/
+.npmignore
+/node_modules/
+/.serverless/
+package-lock.json
+http-handler/node_modules/
+thumbnail-handler/node_modules/
+http-handler/.serverless/
+thumbnail-handler/.serverless/
