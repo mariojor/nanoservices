@@ -60,19 +60,20 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  tag:
+    handler: handler.tag
+    role: arn:aws:iam::199387744801:role/lambda-sqs-rekognition
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-#    events:
+    events:
 #      - httpApi:
 #          path: /users/create
 #          method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
-#      - sns: greeter-topic
+      - sns: arn:aws:sns:us-east-1:199387744801:s3-nanoservices-imagens-put-topic
 #      - stream: arn:aws:dynamodb:region:XXXXXX:table/foo/stream/1970-01-01T00:00:00.000
 #      - alexaSkill: amzn1.ask.skill.xx-xx-xx-xx
 #      - alexaSmartHome: amzn1.ask.skill.xx-xx-xx-xx
