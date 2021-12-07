@@ -4,8 +4,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/node_modules/.bin/serverless",
+            "name": "Launch Serverless",
+            "program": "C:\\\\Users\\precision 3520\\AppData\\Roaming\\npm\\node_modules\\serverless\\bin\\serverless" ,
             "args": [
                 "invoke",
                 "local",
