@@ -9,9 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "aws-sdk": "^2.1043.0",
-    "chai": "^4.3.4",
-    "mocha": "^9.1.3",
+    "aws-sdk": "^2.1043.0", 
     "serverless": "^2.68.0"
   }
 }
